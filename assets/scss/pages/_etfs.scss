@@ -1,0 +1,604 @@
+.whatwedo__screen {
+    &::after {
+		background: url(../img/whatwedo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+.ttac__screen {
+    &::after {
+		background: url(../img/ttac.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+
+.ttai__screen {
+    &::after {
+		background: url(../img/ttai.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+        z-index: -2;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .4);
+	}
+}
+
+
+.dfnv__screen {
+    &::after {
+		background: url(../img/dfnv.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+.dfhy__screen {
+    &::after {
+		background: url(../img/dfhy.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+
+// 
+.etfs-desc__section {
+    padding-bottom: 0;
+}
+.etfs__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #E9E9E9;
+    @media (max-width: $table) {
+        flex-direction: column;
+    }
+}
+.etfs__column-left { 
+    flex: 0 0 50%;
+}
+.etfs__column-right {
+    flex: 0 0 40%;
+}
+.etfs__objective {  
+    padding-bottom: 50px;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding-bottom: 30px;
+	}
+}
+.etfs-subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    span {
+        color: $green;
+    }
+	@media (max-width: $laptop) {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+	}
+	@media (max-width: $table) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+	}
+}
+.etfs-text {
+    p:not(:last-child) {
+        margin-bottom: 20px;
+        @media (max-width: $table) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.etfs__why {
+    padding: 50px 0;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+
+.etfs__list {
+    margin-top: 40px;
+    .etfs__list {
+        margin-top: 20px;
+        color: #547A8E;
+    }
+    @media (max-width: $table) {
+        margin-bottom: 20px;
+    }
+    li {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            @media (max-width: $table) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.list-text {
+    font-weight: 500;
+}
+.efts-round {
+    border: 1px solid #E9E9E9;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    flex: 0 0 110px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	@media (max-width: $laptop) {
+        margin-right: 18px;
+	}
+	@media (max-width: $table) {
+        margin-right: 12px;
+	}
+	@media (max-width: $mobile) {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 80px;
+        svg {
+            width: 40%;
+        }
+	}
+
+}
+.list-max {
+    max-width: 251px;
+}
+.fund__info-table {
+    font-size: 14px;
+    line-height: 22px;
+    @media (max-width: $laptop-m) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    @media (max-width: $table) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+.tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E9E9E9;
+    &.custom-tr {
+        .td {
+            &:nth-child(1) {
+                flex: 0 0 60%;
+            }
+            &:nth-child(2) {
+                flex: 0 0 40%;
+            }
+        }
+    }
+    &:nth-child(1) {
+        .td {
+            padding-top: 0;
+        }
+    }
+    .td {
+        padding: 16px 16px 16px 0;
+        @media (max-width: $laptop-m) {
+            padding: 10px 10px 10px 0;
+        }
+        &:nth-child(1) {
+            flex: 0 0 50%;
+            color: #A8A8A8;
+            text-transform: uppercase;
+        }
+        &:nth-child(2) {
+            flex: 0 0 50%;
+            text-align: end;
+        }
+    }
+}
+.etfs__material {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.etfs__material-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px 26px;
+    background: $green;
+    border-radius: 20px;
+    color: #fff;
+    @media (max-width: $table) {
+        padding: 30px 30px 16px;
+    }
+    @media (max-width: $mobile) {
+        padding: 20px 20px 6px;
+    }
+}
+.material-item {
+    display: block;    
+    margin-bottom: 24px;
+    @media (max-width: $table) {
+        margin-bottom: 14px;
+    }
+    flex: 0 0 33.3%;
+    @media (max-width: $laptop-s) {
+        flex: 0 0 50%;
+    }
+    @media (max-width: $mobile) {
+        flex: 0 0 100%;
+    }
+    i:first-child {
+        color: #E5EEC1;
+    }
+    span {
+        font-weight: 500;
+        margin: 0 23px 0 9px;
+        @media (max-width: $table) {
+            margin: 0 10px 0 5px;
+        }
+        @media (max-width: $mobile) {
+            margin: 0 10px 0 5px;
+        }
+    }
+}
+.etfs__portfolio {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.s-round {
+    border: 1px solid #BAC9D1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $table) {
+        margin-right: 10px;
+    }
+    span {
+        background: #547A8E;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+}
+.portfolio-inner {
+    .etfs__list {
+        max-width: 650px;
+        margin: 30px 0 5px;
+        li {
+            align-items: start;
+        }
+        @media (max-width: $table) {
+            margin: 20px 0;
+        }
+    }
+}
+.etfs__perfomance {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.perfomance-title--row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $table-m) {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+.etfs__table {
+    width: 100%;
+    thead {
+        background: #f4f4f4;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 22px;
+        @media (max-width: $laptop-s) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media (max-width: $table-m) {
+            display: none;
+        }
+    }
+    &.holding-table {
+        margin-top: 20px;
+        td {
+            width: 16%;
+            &:nth-child(2) {
+                width: 14%;
+                @media (max-width: $table-m) {
+                    width: 100%;
+                }
+            }
+            &:nth-child(3) {
+                width: 20%;
+                @media (max-width: $table-m) {
+                    width: 100%;
+                }
+            }
+            @media (max-width: $table-m) {
+                width: 100%;
+            }
+        }
+    }
+    td {
+        width: calc(100% / 6);
+        height: 64px;
+        padding-right: 10px;
+        vertical-align: middle;
+        @media (max-width: $table-m) {
+            height: unset;
+            font-size: 16px;
+            span {
+                flex: 0 0 50%;
+                padding: 15px 10px;
+                &:last-child {
+                    text-align: end;
+                }
+            }
+        }
+        @media (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &:first-child {
+            padding-left: 36px;
+            @media (max-width: $table-m) {
+                padding-left: 0;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+        &:last-child {
+            @media (max-width: $table-m) {
+            }
+        }
+        @media (max-width: $table-m) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .m-td {
+                background: #f4f4f4;
+                display: block;
+                font-weight: bold;
+            }
+        }
+    }
+    tbody {
+        font-weight: 500;
+        tr {            
+            &:nth-child(even) {
+                background: #FCFCFC;
+            }
+            @media (max-width: $table-m) {
+                display: flex;
+                flex-direction: column;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .m-td {
+        display: none;
+    }
+}
+.table-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 46px;
+    opacity: .6;
+    @media (max-width: $laptop-s) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    @media (max-width: $laptop) {
+        margin-top: 20px;
+    }
+}
+
+// 
+
+.etfs__holding {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.holding-title--row {
+    display: flex;
+    @media (max-width: $table-s) {
+        flex-direction: column;
+        .holding-btn {
+            margin-top: 10px;
+            margin-left: 0;
+        }
+        .holding-info {
+            margin-top: 6px;
+        }
+    }
+}
+.title-wrapper {
+    display: flex;
+}
+.holding-info {
+    margin-left: 28px;
+    margin-top: 10px;
+}
+.holding-btn {
+    margin-left: auto;
+}
+
+
+// 
+
+.etfs__discount {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9E9E9;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.discount-inner {
+    .etfs-sutbtitle {
+        margin-bottom: 23px;
+    }
+}
+.discount-info {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    margin-bottom: 23px;
+    background: #F2F2F2;
+    @media (max-width: $table) {
+        padding: 20px;    
+        flex-direction: column;   
+        height: unset;
+        & > div:nth-child(1) {
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: $mobile) {
+        padding: 15px;        
+    }
+}
+
+// 
+
+.discount-row {
+    display: flex;
+    justify-content: space-between;
+    &>div {
+        flex: 0 0 49%;
+        @media (max-width: $laptop-s) {
+            &.discount-chart {
+                flex: 0 0 43%;
+                @media (max-width: $table) {
+                    margin-bottom: 20px;    
+                }
+            }
+            &.discount-content {
+                flex: 0 0 55%;
+            }
+        }
+    }
+    @media (max-width: $table) {
+        flex-direction: column;
+    }
+}
+.discount-chart {
+    img {
+        width: 100%;
+    }
+}
+.discount-table--text {
+    margin-top: 24px;
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 500;
+}
+
+.discount__table {
+    td {
+        width: 37.5%;
+        font-size: 12px;
+        height: 64px;
+        line-height: 18px;
+        text-align: center;
+        padding-right: 10px;
+        vertical-align: middle;
+        &:nth-child(1) {
+            text-align: start;
+            width: 25%;
+            padding-left: 20px;
+        }
+        @media (max-width: $table-m) {
+            height: unset;
+            width: 40%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 10px;
+            line-height: 15px;
+            &:nth-child(1) {
+                text-align: start;
+                width: 20%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    width: 100%;
+    thead {
+        background: #f4f4f4;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    tbody {
+        font-weight: 500;
+        tr {            
+            &:nth-child(even) {
+                background: #FCFCFC;
+            }
+        }
+    }
+}
+
+// 
+
+.etfs__distrubution {
+    padding: 50px 0;
+	@media (max-width: $table) {
+        padding: 30px 0;
+	}
+}
+.distrubution-title--row {
+    display: flex;
+    justify-content: space-between;
+}
+.distrubution-info {
+    margin-top: 7px;
+	@media (max-width: $table) {
+        font-size: 12px;
+        line-height: 18px;
+	}
+}

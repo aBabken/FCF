@@ -1,0 +1,22 @@
+.article-content .article-row {
+    position:relative;
+}
+.article-content .article-row .share-btn {
+    min-width:135px;
+    text-align:center;
+}
+.article-content .article-row .social_share_Wrapper {
+    height:0;
+    visibility:hidden;
+    opacity:0;
+    transition:all .3s ease;
+    position:absolute;
+    top: 100%;
+    right: 0;
+}
+.article-content .article-row .social_share_Wrapper.active {
+    height:auto;
+    visibility:visible;
+    opacity:1;
+    transition:all .3s ease;
+}

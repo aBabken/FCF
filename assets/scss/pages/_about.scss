@@ -1,0 +1,302 @@
+
+.about__screen {
+	&::after {
+		background: url(../img/about.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+
+.about__text {
+	max-width: 802px;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 30px;
+	p {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+            @media only screen and (max-width: $table) {
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width: $mobile-s) {
+                margin-bottom: 15px;
+            }
+		}
+	}
+	span {
+		color: $green;
+	}
+    @media only screen and (max-width: $mobile) {
+        font-size: 14px;
+		line-height: 18px;
+    }
+}
+.dark-bg {
+	background: $black;
+}
+.timeline-title.section-title {
+	margin-bottom: 0;
+}
+.timeline-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.timeline-item {
+	padding: 50px 0;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 47%;
+	flex: 0 0 47%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	color: #fff;
+    @media only screen and (max-width: $laptop-s) {
+        padding: 30px 0;
+    }
+    @media only screen and (max-width: $mobile) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+    }
+}
+.timeline-list--subitem {
+	color: rgba(255, 255, 255, 0.6);
+	padding-left: 60px;
+	font-weight: 500;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		background: #fff;
+		background: rgba(255, 255, 255, 0.6);
+        @media only screen and (max-width: $table) {
+            width: 15px;
+			height: 1px;
+        }
+	}
+	&:not(:last-child) {
+		margin-bottom: 27px;
+        @media only screen and (max-width: $laptop-s) {
+            margin-bottom: 17px;
+        }
+	}
+    @media only screen and (max-width: $table) {
+        padding-left: 30px;
+    }
+}
+.timeline-list--item {
+	padding-left: 60px;
+	font-weight: 500;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		background: #fff;
+        @media only screen and (max-width: $table) {
+            width: 15px;
+			height: 1px;
+        }
+	}
+	&:not(:last-child) {
+		margin-bottom: 27px;
+        @media only screen and (max-width: $laptop-s) {
+            margin-bottom: 17px;
+        }
+	}
+	>div {
+		&:nth-child(2) {
+			margin-top: 27px;
+            @media only screen and (max-width: $laptop-s) {
+                margin-top: 17px;
+            }
+		}
+	}
+    @media only screen and (max-width: $table) {
+        padding-left: 30px;
+    }
+}
+.timeline-date {
+	color: rgba(255, 255, 255, 0.2);
+	margin-bottom: 48px;
+	font-size: 30px;
+	line-height: 37px;
+    @media only screen and (max-width: $laptop-s) {
+        margin-bottom: 20px;
+		font-size: 22px;
+		line-height: 27px;
+    }
+}
+.timeline-logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border: 2px solid #515151;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 178px;
+	flex: 0 0 178px;
+	height: 178px;
+	border-radius: 50%;
+	margin-right: 30px;
+    @media only screen and (max-width: $table) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 100px;
+		flex: 0 0 100px;
+		height: 100px;
+		margin-right: 20px;
+    }
+    @media only screen and (max-width: $mobile-s) {
+        -webkit-box-flex: unset;
+		-ms-flex: unset;
+		flex: unset;
+		width: 100px;
+		margin: 0 0 20px;  
+    }
+    img {
+        @media only screen and (max-width: $table) {
+            width: 40px;
+        }
+    }
+}
+
+
+
+// 
+
+.team__frame {
+	overflow-x: hidden;
+	position: relative; 
+}
+.team__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	&:nth-child(even) {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		@media only screen and (max-width: $table-s) {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+		}
+		.team-content {
+			&::after {
+				right: 0;
+				left: unset;
+			}
+		}
+	}
+	&:not(:last-child) {
+		margin-bottom: 120px;
+        @media only screen and (max-width: $laptop-m) {
+            margin-bottom: 80px;
+        }
+        @media only screen and (max-width: $table) {
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: $table-s) {
+            margin-bottom: 30px;
+        }
+	}
+    @media only screen and (max-width: $table-s) {
+        padding-bottom: 30px;
+		border-bottom: 1px solid #9F9F9F;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+    }
+}
+.team-image {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 32%;
+	flex: 0 0 32%;
+	img {
+		width: 100%;
+	}
+}
+.team-content {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 58%;
+	flex: 0 0 58%;
+	padding-top: 50px;
+	position: relative;
+	&::after {
+		content: "";
+		width: 100vw;
+		top: 0;
+		left: 0;
+		height: 1px;
+		background: #9F9F9F;
+		position: absolute;
+        @media only screen and (max-width: $table-s) {
+            display: none;
+        }
+	}
+    @media only screen and (max-width: $laptop-m) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 63%;
+		flex: 0 0 63%;
+		padding-top: 40px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 65%;
+		flex: 0 0 65%;
+		padding-top: 25px;
+    }
+}
+.team-position {
+	color: $green;
+	text-transform: uppercase;
+}
+.team-title.section-title {
+	margin-bottom: 10px;
+    @media only screen and (max-width: $laptop-s) {
+        margin-bottom: 3px;
+    }
+}
+.team-text {
+	margin-top: 50px;
+	font-weight: 500;
+	color: #626262;
+	p {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+            @media only screen and (max-width: $table) {
+                margin-bottom: 10px;
+            }
+		}
+	}
+    @media only screen and (max-width: $laptop-m) {
+        margin-top: 40px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        margin-top: 25px;
+    }
+}
