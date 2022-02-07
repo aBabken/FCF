@@ -8,6 +8,12 @@
 		background-size: cover;
 		background-position: center center;
 		z-index: -2;
+        @media (max-width: $mobile-s) {
+            background: url(../img/insightsM.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;            
+        }
 	}
 	&::before {
 		content: "";
@@ -70,14 +76,7 @@
 			}
 		}
 	}
-    @media only screen and (max-width: $laptop-s) {
-        margin-top: 20px;
-    }
     .insights-subtitle {
-        @media only screen and (max-width: $laptop-s) {
-            font-size: 12px;
-            line-height: 17px;
-        }
 		a {
 			transition: all .3s ease;
 			&:hover {
@@ -98,6 +97,9 @@
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
+		@media (max-width: $mobile) {
+			justify-content: unset;
+		}
 	}
 	li {
 		display: -webkit-box;
@@ -132,17 +134,6 @@
 		&:not(:last-child) {
 			margin-right: 10px;
 		}
-		svg {
-			margin-top: 5px;
-            @media only screen and (max-width: $mobile) {
-                width: 20px;
-				height: 20px;
-            }
-		}
-        @media only screen and (max-width: $mobile) {
-            width: 30px;
-			height: 30px;
-        }
 	}
 	li.active {
 		background: $green;

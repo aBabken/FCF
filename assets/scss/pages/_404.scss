@@ -5,6 +5,12 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+		@media (max-width: $mobile-s) {
+			background: url(../img/404M.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;			
+		}
 	}
     @media only screen and (max-height: 400px) {
         height: 400px;
@@ -12,15 +18,18 @@
 }
 .notfound-btn {
 	margin: 50px auto 0;
-	font-size: 12px;
+	padding: 0 20px;
 	width: 100%;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	max-width: 208px;
-	line-height: 16px;
+	max-width: 223px;
     @media only screen and (max-width: $mobile) {
         margin-top: 30px;
-		width: 160px;
     }
+}
+.notfound-title {
+	@media (max-width: $mobile) {
+		margin-bottom: 30px;
+	}
 }

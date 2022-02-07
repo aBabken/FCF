@@ -11,6 +11,9 @@
 		background-color: #E6E8EB;
 		z-index: 0;
 	}
+	.s-container {
+		padding: 0;
+	}
 }
 .navigation {
 	display: -webkit-box;
@@ -42,6 +45,9 @@
 		white-space: nowrap;
 		&:not(:last-child) {
 			margin-right: 35px;
+			@media (max-width: $mobile) {
+				margin-right: 25px;
+			}
 		}
 		&:hover {
 			color: $black;
@@ -72,7 +78,15 @@
 			width: 100%;
 		}
 	}
-    @media only screen and (max-width: $mobile) {
-        height: 40px;
-    }
+}
+.insights-item--title {
+	@media (max-width: $table) {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+	@media (max-width: $mobile) {
+		font-size: 20px;
+		line-height: 25px;
+	}
 }

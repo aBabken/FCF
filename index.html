@@ -254,7 +254,11 @@
       <div class="home__frame">
         <div class="home__frame--inner">
           <div class="home__frame-image" data-layer="2">
-            <img src="assets/img/home1.jpg" alt="">
+            <picture>
+              <source media="(max-width: 375px)" srcset="assets/img/home1M.jpg">
+              <source srcset="assets/img/home1.jpg">
+              <img src="assets/img/home1.jpg" alt="">
+            </picture>
           </div>
           <div class="home__frame-content default-frame">
             <div class="m-container">
@@ -352,7 +356,7 @@
       <div class="fcfqm-frame">
         <div class="container">
           <div class="fcfqm-inner">
-            <div class="fcfqm-title section-title opac center">
+            <div class="fcfqm-title section-title opac">
               FCF Quality Model (FCFQM) 
             </div>
             <div class="fcfqm-subtitle fw-m opac">
@@ -381,7 +385,7 @@
               </div>
             </div>
             <div class="fcfqm-bottom">
-              <p class="center fw-m opac">Read more about our approach</p>
+              <p class="center fw-s opac">Read more about our approach</p>
               <a href="#" class="btn-green btn-default home-btn opac">
                 DOWNLOAD WHITE PAPER
               </a>
@@ -441,11 +445,11 @@
 
     <div class="section__screen information-screen default-frame" data-layer="1">
       <div class="container">
-        <a href="#" class="btn-information opac">
-          <span>contact us</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="50.802" height="43.544" viewBox="0 0 50.802 43.544">
-            <path id="left-arrow_1_" data-name="left-arrow (1)" d="M21.787,34.446,0,56.218,21.779,77.99l2.565-2.558-17.4-17.4H50.8V54.4H6.945L24.352,37Z" transform="translate(50.802 77.99) rotate(180)" fill="#fff"/>
-          </svg>          
+        <a href="#" class="btn-information">
+          <span class="x-y">
+            More Information   More Information
+          </span>
+          <span>Contact us</span>
         </a>
       </div>
     </div>
@@ -556,7 +560,10 @@
           <div class="footer__row footer__bottom">
             <div class="footer-rights">
               <div class="rights-text">
+                <p>                  
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra, purus eu mattis posuere, dolor urna faucibus lectus, ut dictum augue justo non ante. Nulla dictum feugiat odio ut ornare. Curabitur est diam, laoreet sit amet odio at, convallis iaculis dolor. Proin vel mi eros. Etiam libero nibh, dapibus vel leo vitae, facilisis blandit mi. Phasellus ut pharetra orci. Nunc condimentum magna vitae dui tristique, auctor tristique lorem interdum. Nullam pharetra orci velit, sed posuere metus fringilla et. Morbi pellentesque massa vitae hendrerit tempus. Morbi vel justo tincidunt, sollicitudin lacus quis, tempus metus. Aenean fermentum sodales lorem ut vehicula. Praesent eu mi volutpat, venenatis diam congue, mattis odio. Duis id gravida erat.
+                </p>
+                <p>© FCF Funds 2021. All rights reserved.</p>
               </div>
               <div class="rights-row">
                 <div class="rights-title">

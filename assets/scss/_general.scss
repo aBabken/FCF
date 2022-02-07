@@ -9,6 +9,7 @@ website: https://freelancehunt.com/freelancer/ababken.html
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    cursor: none !important;
 }
 
 html,
@@ -189,13 +190,7 @@ body {
     color: $black;
     cursor: none;
     @media only screen and (max-width: $laptop-m) {
-        font-size: 14px;
-        line-height: 23px;
-    }
-
-    @media only screen and (max-width: $laptop-s) {
-        // font-size: 12px;
-        // line-height: 16px;
+        line-height: 19px;
     }
 }
 
@@ -212,10 +207,6 @@ body {
     @media only screen and (max-width: $laptop) {
         max-width: 1240px;
     }
-
-    @media only screen and (max-width: $mobile) {
-        padding: 0 15px;
-    }
 }
 
 .container {
@@ -223,10 +214,6 @@ body {
     padding: 0 20px;
     width: 100%;
     margin: 0 auto;
-
-    @media only screen and (max-width: $mobile) {
-        padding: 0 15px;
-    }
 }
 
 .main__screen {
@@ -247,6 +234,7 @@ body {
 }
 
 .btn-default {
+    letter-spacing: .1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,22 +244,20 @@ body {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    height: 50px;
+    height: 60px;
+    min-width: 222px;
     text-align: center;
     align-items: center;
     justify-content: center;
     z-index: 2;
     position: relative;
+    font-size: 16px;
+    line-height: 19px;
 
     @media only screen and (max-width: $laptop-m) {
-        padding: 0 15px;
-        height: 45px;
+        padding: 0 25px;
     }
 
-    @media only screen and (max-width: $laptop-s) {
-        padding: 0 10px;
-        height: 40px;
-    }
 }
 
 .btn-outline {
@@ -292,18 +278,14 @@ body {
     @media only screen and (max-width: $laptop-s) {
         font-size: 30px;
         line-height: 40px;
-        margin: 20px 0;
-    }
-
-    @media only screen and (max-width: $mobile-s) {
-        font-size: 24px;
-        line-height: 30px;
-        margin: 15px 0;
     }
 }
 
 .md-screen__title {
     max-width: 594px;
+    @media (max-width: $mobile-s) {
+        max-width: 280px;
+    }
 }
 .mx-screen__title {
     max-width: 620px;
@@ -339,6 +321,7 @@ body {
     @media only screen and (max-width: $mobile) {
         font-size: 30px;
         line-height: 40px;
+        max-width: 260px;
     }
 
     @media only screen and (max-width: $mobile-s) {
@@ -429,14 +412,6 @@ body {
     @media only screen and (max-width: $laptop) {
         font-size: 30px;
         line-height: 40px;
-        margin-bottom: 40px;
-    }
-
-    @media only screen and (max-width: $mobile) {
-        margin-bottom: 25px;
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 20px;
     }
 }
 
@@ -462,10 +437,6 @@ body {
 .m-container {
     @media only screen and (max-width: $laptop-s) {
         padding: 0 20px;
-    }
-
-    @media only screen and (max-width: $mobile) {
-        padding: 0 15px;
     }
 }
 
@@ -506,6 +477,9 @@ body {
 
 .fw-m {
     font-weight: 500;
+}
+.fw-s {
+    font-weight: 600;
 }
 .fw-b {
     font-weight: bold;
@@ -555,10 +529,10 @@ body {
 }
 
 .home-btn {
-    margin-top: 30px;
+    margin-top: 40px;
 
     @media only screen and (max-width: $laptop) {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
@@ -572,7 +546,7 @@ body {
     }
 
     @media only screen and (max-width: $mobile) {
-        padding: 40px 0;
+        padding: 50px 0;
     }
 }
 
@@ -631,7 +605,7 @@ body {
     width: 50px;
     height: 50px;
     border: 2px solid #F8F8F8;
-    cursor: pointer;
+    // cursor: pointer;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -671,12 +645,18 @@ body {
     z-index: 10000;
     width: 10px;
     height: 10px;
+    transition: width .3s ease, height .3s ease;
     &.is-active {
         .cursor-content {
           transform: translate(-50%,-50%) scale(1);
           color: #fff;
       }
 
+    }
+    &.hover:not(.is-active) {
+        .cursor-content {
+            transform: translate(-50%,-50%) scale(.15);
+        }
     }
   }
   
@@ -726,9 +706,6 @@ body {
 	margin: 40px 0;
 	@media (max-width: $laptop) {
 		margin: 30px 0;
-	}
-	@media (max-width: $mobile) {
-		margin: 15px 0;
 	}
 	li {
 		display: flex;

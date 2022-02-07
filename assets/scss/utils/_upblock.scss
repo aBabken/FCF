@@ -63,9 +63,6 @@
 	max-width: 519px;
     p:not(:last-child) {
         margin-bottom: 20px;
-        @media (max-width: $mobile) {
-            margin-bottom: 10px;
-        }
     }
 }
 
@@ -114,11 +111,5 @@
 			width: 10px;
 			height: 10px;
 		}
-	}
-	@media (max-width: $laptop) {
-		margin-right: 18px;
-	}
-	@media (max-width: $mobile) {
-		margin-right: 10px;
 	}
 }

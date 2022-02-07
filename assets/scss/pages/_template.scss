@@ -4,6 +4,9 @@
 	&::after {
 		background-color: $black;
 	}
+	.main__screen--title {
+		max-width: 340px;
+	}
 }
 .a-screen {
 	height: 446px;
@@ -72,5 +75,48 @@
 .share-btn {
 	i {
 		margin-right: 5px;
+	}
+}
+.signup-block {
+	margin-top: 50px;
+	padding:  50px 102px;
+	background: $green;
+	color: #fff;
+	@media (max-width: $laptop) {
+		margin-top: 30px;
+		padding: 30px 70px;
+	}
+	@media (max-width: $table-s) {
+		padding: 20px 50px;
+	}
+	@media (max-width: $mobile-s) {
+		padding: 20px;
+	}
+}
+.signup-inner {
+    display: flex;
+    justify-content: space-between;
+	flex-direction: column;
+    flex-wrap: wrap;
+	> form,
+	> div {
+		flex: unset;
+	}
+	.signup-title {
+		max-width: 390px;
+		text-align: start;
+	}
+	.signup-input {
+		width: 100%;
+		margin-top: 30px;
+		@media (max-width: $table-s) {
+			flex-direction: column;
+			height: unset;
+			> input,
+			> button {
+				height: 50px;
+				flex: unset;
+			}
+		}
 	}
 }

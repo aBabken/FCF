@@ -35,7 +35,7 @@
 		}
 		.logo {
 			svg {
-				path {
+				path, text, tspan {
 					fill: $black;
 				}
 			}
@@ -59,8 +59,8 @@
 .rights__screen.open__header {
 	.logo {
 		svg {
-			path {
-				fill: #fff;
+			path, text, tspan  {
+				fill: #fff !important;
 			}
 		}
 	}
@@ -158,4 +158,10 @@
         font-size: 16px;
         line-height: 25px;
     }
+}
+.privacy-title {
+	@media (max-width: $mobile) {
+		text-align: start;
+		margin-bottom: 30px;
+	}
 }

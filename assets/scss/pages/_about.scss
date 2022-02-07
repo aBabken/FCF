@@ -5,6 +5,12 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+        @media (max-width: $mobile-s) {
+            background: url(../img/aboutM.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;            
+        }
 	}
 }
 
@@ -106,10 +112,6 @@
 		width: 30px;
 		height: 2px;
 		background: #fff;
-        @media only screen and (max-width: $table) {
-            width: 15px;
-			height: 1px;
-        }
 	}
 	&:not(:last-child) {
 		margin-bottom: 27px;
@@ -126,7 +128,7 @@
 		}
 	}
     @media only screen and (max-width: $table) {
-        padding-left: 30px;
+        padding-left: 50px;
     }
 }
 .timeline-date {
@@ -225,7 +227,6 @@
 	}
     @media only screen and (max-width: $table-s) {
         padding-bottom: 30px;
-		border-bottom: 1px solid #9F9F9F;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
